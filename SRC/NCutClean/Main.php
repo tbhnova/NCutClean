@@ -22,9 +22,13 @@ class Main extends PluginBase implements Listener {
             case Block::IRON_ORE:
                 $event->setDrops(array(Item::get(Item::IRON_INGOT, 0, 1)));
                 break;
+            case Block::COAL_ORE:
+                $event->setDropa(array(Item::get(Item::TORCH, 0, 4)));
         }
     }
-    public function onDisable() {
+
+
+  public function onDisable() {
         $this->getLogger()->info("NCutClean Disabled!");
     }
 }
