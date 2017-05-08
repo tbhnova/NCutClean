@@ -13,11 +13,7 @@ class Main extends PluginBase implements Listener{
 public function OnEnable(){
    $this->getLogger()->info("NCutClean enabled! Made by tbhnova");
    $this->getServer()->getPluginManager()->registerEvents($this, $this);
-   }
-   
-public function OnDisable(){
-   $this->getLogger()->info("NCutClean Disabled!");
-    }
+ }
 
 public function onBreak(BlockBreakEvent $event){
       if($event->getBlock()->getId() == 14){
@@ -37,7 +33,11 @@ public function onBreak(BlockBreakEvent $event){
       $event->setDrops($drops);
       
    }
-  
- 
+  }
+ }
+}
 
-
+public function OnDisable(){
+   $this->getLogger()->info("NCutClean Disabled!");
+    }
+  }
