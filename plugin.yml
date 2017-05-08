@@ -1,0 +1,5 @@
+name: NCutClean
+main: NCutClean\Main
+version: 0.1
+api: [3.0.0, 3.0.0-ALPHA5]
+author: Nova
